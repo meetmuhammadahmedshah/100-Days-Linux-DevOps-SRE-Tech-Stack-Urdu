@@ -1,29 +1,29 @@
-# 🚀 NIT اکیڈمی میں سیکھنے کا راستہ
+# 🚀 NIT Academy Main Seekhne Ka Rasta
 
-NIT اکیڈمی اپنے طلباء میں **ریل ٹائم ملازمت کے غوطہ وری کے ماحول** کے ذریعے صلاحیت پیدا کرنے پر مرکوز ہے۔ ہم صرف نظریہ نہیں سکھاتے؛ ہم آپ کو آئی ٹی انڈسٹری کے اندرونی کام کاج سے آشنا کرتے ہیں تاکہ آپ ہائی امپیکٹ کے کرداروں کے لیے تیار ہوں۔
+NIT Academy apne talaba mein **Real-time Milne Ki Ghotia Wala Mahol** ke zariye salahiyat paida karne par mukhtasif hai. Hum sirf nazriya nahi sikhatay; hum aap ko IT industry ke andari kaam kaaj se aashna karte hain taake aap high-impact ke khilaf tayyar ho jayein.
 
-آئی ٹی کا منظرنامہ بہت وسیع ہے، لیکن ہمارا نصاب ایک کامیاب کاروبار بنانے یا اعلیٰ درجے کی آئی ٹی کمپنی میں کامیاب ہونے کے لیے ضروری بنیادی اجزا اور ٹیکنالوجیز کی گہری، عملی تفہیم فراہم کرنے کے لیے ڈیزاین کیا گیا ہے۔
+IT ka manzar nama bohat waisa hai, lekin humara nisab is tarah se design kiya gaya hai ke ek muvafaqat karobar banane ya aala darje ke IT company mein muvafaqat hone ke liye zaroori bunyadi ajza aur technologies ki gehri, amali tehqiqat farahamat kar sakein.
 
-## 🎓 آپ کیا سیکھیں گے
+## 🎓 Aap Kya Sikhayenge
 
-### 🐧 لینکس ایکوسسٹم
-جدید انٹرنیٹ کی بنیاد پر دسترس حاصل کریں۔ آپ Enterprise Linux distributions میں گہرا غوطہ لیں گے، سسٹم ایڈمنسٹریشن، کرنل آپٹیمائزیشن، اور کمانڈ لائن مہارت سیکھیں گے۔
+### 🐧 Linux Ecosystem
+Modern Internet ki buniyad par dastras hasil karein. Aap Enterprise Linux distributions mein gehri ghotia layenge, system administration, kernel optimization, aur command line mehnat sikhayenge.
 
-### ♾️ ڈیوپس (Development Operations)
-وہ ثقافت اور ٹولز سیکھیں جو ترقی اور آپریشنز کے درمیان فاصلہ پُر کرتے ہیں۔ ہم CI/CD پائپ لائنز، آٹومیشن، اور عالمی انجینئرنگ ٹیمز کے جدید ورک فلوز کور کرتے ہیں۔
+### ♾️ DevOps (Development Operations)
+Wo culture aur tools sikhate hain jo taraqqi aur operations ke darmiyan fasla pooratay hain. Hum CI/CD pipelines, automation, aur global engineering teams ke modern workflows cover karte hain.
 
-### 🛠️ سائٹ ریلی ایبلینٹ انجینئرینگ (SRE)
-سمجھیں کہ سکیلیبل اور اعلیٰ قابل اعتماد سافٹویئر سسٹمز کیسے ڈیزاین، بنائے اور برقرار رکھے جاتے ہیں۔ آپ نگرانی، واقعہ کا ردعمل، اور کیسیٹی پلاننگ کے اصول سیکھیں گے۔
+### 🛠️ Site Reliability Engineering (SRE)
+Samjhein ke scalable aur aala qabil可靠 software systems kaise design, banaye aur barqarar rakhe jatay hain. Aap monitoring, incident response, aur capacity planning ke asool sikhayenge.
 
-### 📱 فل اسٹیک آرکیٹیکچر
-کیا آپ کبھی سوچے ہیں کہ ویب اور موبائل ایپس "hood کے نیچے" کیسے کام کرتی ہیں؟ ہم **Technology Stack** کو توڑتے ہیں، فرنٹ اینڈ انٹرفیس سے بیک اینڈ تک اور ڈیٹابیس مینجمنٹ تک۔
+### 📱 Full Stack Architecture
+Kya aap kabhi socha hai ke web aur mobile apps "hood ke niche" kaise kaam karte hain? Hum **Technology Stack** ko todte hain, frontend interface se leke backend tak aur database management tak.
 
-### 🏢 ڈیٹا سینٹر انفراسٹرکچر
-ہمارے **Physical Mini-Data Center** کے ساتھ ہاتھوں کا تجربہ حاصل کریں۔ کلاؤڈ کا صرف صارف کرنے والے پروگراموں کے مقابلے میں، آپ وہ ہارڈویئر، ورچوئلائزیشن، اور نیٹ ورکنگ سیکھیں گے جو ڈیجیٹل دنیا کو چلاتے ہیں۔
+### 🏢 Data Center Infrastructure
+Humare **Physical Mini-Data Center** ke saath haathon ka tajurba hasil karein. Cloud ke sirf consumer karne walay programs ke muqabale mein, aap wo hardware, virtualization, aur networking sikhayenge jo digital duniya ko chalate hain.
 
-### 🛡️ نیٹ ورک اور سیکیورٹی
-جدید صنعتی ٹولز کا صارف کرتے ہوئے انفراسٹرکچر کو محفوظ بنانے اور کارکردگی کو بہتر بننے سیکھیں، دور دراز سے رسائی اور ٹریفک مینجمنٹ کے لیے۔
+### 🛡️ Network Aur Security
+Modern industrial tools ke use karte hue infrastructure ko mehfooz banane aur kararkrdagi ko behtr karne sikhayenge, door daraz se rasai aur traffic management ke liye.
 
 ---
 
-**NIT اکیڈمی میں ہمارے ساتھ شامل ہوں اور ایک طالب علم سے انڈسٹری کے پیشہ ور میں تبدیل ہوں۔**
+**NIT Academy mein humare saath shamil hoen aur ek talab se industry ke mahir mein tabdeel hoen.**

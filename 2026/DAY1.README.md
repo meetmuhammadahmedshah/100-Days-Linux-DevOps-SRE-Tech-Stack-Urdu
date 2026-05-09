@@ -1,44 +1,45 @@
-# NIT اکیڈمی میں خوش آمدید - دن 1
+# NIT Academy Mein Khush Amdeed - Din 1
 
-## فہرست
+## Fehrist
 
-| ٹاسک | عنوان | خلاصہ |
+| Task | Unwan | Khulasi |
 |------|------|------|
-| 1 | [اپنے ورچوئل مشین تک رسائی حاصل کریں](#task-1---اپنے-ورچوئل-مشین-تک-رسائی-حاصل-کریں) | یونیکس/لینکس کا تعارف |
-| 2 | [لینکس شیل کیا ہے؟](#task-2---لینکس-شیل-کیا-ہے) | ورچوئل مشین میں لاگ ان کریں اور لینکس کمانڈ لائن (CLI) تک رسائی حاصل کریں |
-| 3 | [گٹ ہب اکاؤنٹ رجسٹر کریں](#task-3---گٹ-ہب-اکاؤنٹ-رجسٹر-کریں) | اپنا گٹ ہب اکاؤنٹ بنائیں |
-| 4 | [لینکڈ ان رجسٹر کریں یا اپڈیٹ کریں](#task-4---لینکڈ-ان-رجسٹر-کریں-یا-اپڈیٹ-کریں) | لینکڈ ان پروفائل بنائیں یا بہتر بنائیں |
-| 5 | [گٹ بیش انٹال کریں](#task-5---گٹ-بیش) | ونڈوز پر گٹ بیش انٹال کریں |
-| 6 | [ویژول اسٹوڈیو کوڈ](#task-6---ویژول-اسٹوڈیو-کوڈ) | ویژول اسٹوڈیو کوڈ انٹال کریں |
-| 7 | [ڈسکورڈ](#task-7---ڈسکورڈ) | ڈسکورڈ انٹال کریں اور شامل ہوں |
+| 1 | [Apne Virtual Machine Tak Rasai Hasil Karein](#task-1---apne-virtual-machine-tak-rasai-hasi) | Unix/Linux ka taaruf |
+| 2 | [Linux Shell Kya Hai?](#task-2---linux-shell-kya-hai) | Virtual machine mein login karein aur Linux command line (CLI) tak rasai hasil karein |
+| 3 | [GitHub Account Register Karein](#task-3---github-account-register-karein) | Apna GitHub account banayein |
+| 4 | [LinkedIn Register Karein Ya Update Karein](#task-4---linkedin-register-karein-ya-update-karein) | LinkedIn profile banayein ya behtar banayein |
+| 5 | [Git Bash Install Karein](#task-5---git-bash-install) | Windows par Git Bash install karein |
+| 6 | [Visual Studio Code](#task-6---visual-studio-code) | Visual Studio Code install karein |
+| 7 | [Discord](#task-7---discord) | Discord install karein aur shamil hoen |
 
 ---
-# ہم اب اپنا لینکس سفر شروع کررہے ہیں
-براہ کرم اسے سنجیدگی سے لیں اور تمام اسائنمنٹس وقت پر مکمل کریں۔
 
-# ٹاسک 1 - اپنے ورچوئل مشین تک رسائی حاصل کریں؟
-1. Xen-Orchestra تک رسائی
-نیچے دیے گئے لنک پر کلک کریں تاکہ لاگ ان صفحہ تک رسائی حاصل کریں\
+# Hum Ab Apna Linux Safar shuru kar rahe hain
+Isay sajagti se lein aur tamam assignments waqt par mukammal karein.
+
+# Task 1 - Apne Virtual Machine Tak Rasai Hasil Karein?
+1. Xen-Orchestra Tak Rasai
+Neeche diye gaye link par click karein taake login page tak rasai hasil karein\
 [Xen-Orchestra](https://labs.nit.academy)
 
 <img src=".././.github/assets/XO-LOGIN.jpg" width="500">\
-اپنے کریڈینشلز داخل کریں:
+Apne credentials andarkarein:
 ```Text
-یوزر نیم:
-پاس ورڈ:
+Username:
+Password:
 ```
-2. اپنے ورچوئل مشین (VM) کنسول پر نیویگیٹ کریں
-اس ورچوئل مشین پر کلک کریں جس میں "سبز" ڈاٹ ہو:\
+2. Apne Virtual Machine (VM) Console Par Navigate Karein
+Is virtual machine par click karein jismein "sabz" dot ho:\
 <img src=".././.github/assets/XO-VM.jpg" width="700">
 
-اپنے ورچوئل مشین کے وسائل کا جائزہ لیں:\
+Apne Virtual Machine ke resource ka jaizza lein:\
 <img src=".././.github/assets/XO-VM-CONSOLE.jpg" width="700">
 
-"Console" ٹیب پر کلک کریں:\
+"Console" tab par click karein:\
 <img src=".././.github/assets/XO-LINUX-VM.jpg" width="700">
 ```Text
-مرحلہ 1 - "سیاہ باکس" میں کلک کریں
-مرحلہ 2 - "Enter Key" دبائیں
+Marhala 1 - "Siyah Box" par click karein
+Marhala 2 - "Enter Key" dabayein
 ```
 <img src=".././.github/assets/XO-VM-LOGIN.jpg" width="700">
 
@@ -47,139 +48,140 @@
    Password: abc
    Last login: Sat Apr 18 02:51:09 on tty1
 ```
-3. آئیے اس IPv6 اوور فلو کے مسئلے کو درست کرتے ہیں۔
-جب ہم نیٹ ورکنگ سیکھیں گے تو ہم سمجھیں گے:
-- ip4 بمقابلہ ipv6
-- سٹیٹک IP کی اہمیت
-- نیٹ ورکنگ مسائل کا ازالہ
+3. Aiyai is IPv6 overflow ke masle ko theek karte hain.
+Jab hum networking sikhenge to hum samjhayenge:
+- IP4 vs IP6
+- Static IP ki ahmiyat
+- Networking maslon ka azala
 
-نوٹ: IPv6 کو غیرفعال کرنے کا مستقل حل
-آئیے sysctl کنفیگریشن فائل میں ترمیم کریں\
-مندرجہ ذیل فائل کھولیں:
+Note: IPv6 ko ghair-fehal karne ka muqamir hal
+Aiyai sysctl configuration file mein tamere karein\
+Mentarajja file kholein:
 
 ```bash
 <root@vm1>#vi /etc/sysctl.conf
 ```
-اپنے کیبورڈ پر "i" کی دبائیں
 
-اسکرپٹ کے نیچے سکرول کریں اور اسکرپٹ کے آخر میں یہ لائنیں شامل کریں
+Apne keyboard par "i" dabayein
+
+Script ke neeche scroll karein aur script ke akhir mein yeh lines shamil karein
 net.ipv6.conf.all.disable_ipv6 = 1\
 net.ipv6.conf.default.disable_ipv6 = 1
 
-"Esc" کی دبائیں
-ٹائپ کریں:
+"Esc" dabayein
+Type karein:
 :wq
-پھر Enter دبائیں
+Phir Enter dabayein
 
-تبدیلیاں لاگو کریں:
+Tabdiliyan lagoo karein:
 ```bash
 <root@vm1>#sysctl -p
 ```
-### ٹاسک اب مکمل ہوگیا ہے!
+### Task Ab Mukammal ho gaya!
 
-# ٹاسک 2 - لینکس شیل کیا ہے؟
+# Task 2 - Linux Shell Kya Hai?
 
-1. **شیل (انٹرفیس)**  
-   شیل کو آپریٹنگ سسٹم کی "بیرونی تہہ" کی طرح سمجھیں (جیسے کسی مٹیال کے بیرونی خول کی طرح)۔ یہ وہ ماحول ہے جہاں آپ اپنے ہدایات ٹائپ کرتے ہیں۔
+1. **Shell (Interface)**  
+   Shell ko operating system ki "bahiri tah" ki tarah samjhein (jaisay kisi mitti ke bahiri khol ki tarah). Yeh wo mahol hai jahan aap apne hidayat type karte hain.
 
-   **analogی:**  
-   شیل آپ اور کمپیوٹر کے درمیان چیٹ ونڈو کی طرح ہے۔ آپ کچھ ٹائپ کرتے ہیں، اور یہ کمپیوٹر کے جواب کا انتظار کرتا ہے۔
+   **Analogy:**  
+   Shell aap aur computer ke darmiyan chat window ki tarah hai. Aap kuch type karte hain, aur yeh computer ke jawaab ka intezar karta hai.
 
 2. **Interpreter (Translator)**
-   Interpreter وہ پروگرام ہے جو شیل کے اندر چل رہا ہے۔ کمپیوٹر انگریزی نہیں بولتے؛ وہ بینری (1s اور 0s) بولتے ہیں۔ Interpreter وہ الفاظ جو آپ ٹائپ کرتے ہیں اور انہیں اس زبان میں ترجمہ کرتا ہے جو کمپیوٹر کا "دماغ" (kernel) سمجھتا ہے۔
+   Interpreter wo program hai jo shell ke andar chal raha hai. Computer English nahi bolti; wo binary (1s aur 0s) bolti hai. Interpreter wo alfaiz jo aap type karte hain aur unhen us zaban mein tarjuma karta hai jo computer ka "dimagh" (kernel) samjhta hai.
 
-   **analogy:**  
-   Interpreter دو لوگوں کے درمیان بیٹھا ہوا ترجمان ہے جو مختلف زبانیں بولتے ہیں۔
+   **Analogy:**  
+   Interpreter do logon ke darmiyan baitha hua tarjuman hai jo alag alag zuban bolte hain.
 
-3. **کمانڈ لائن (ایکشن)**
-   کمانڈ لائن بس وہ خاص لائن ہے جسے آپ کام مکمل کرنے کے لیے ٹائپ کرتے ہیں۔ اس کا عام طور پر سادہ "Verb + Object" ساخت ہوتی ہے۔
+3. **Command Line (Action)**
+   Command line bas wo khaas line hai jise aap kaam mukammal karne ke liye type karte hain. Iska aam taur par sadah "Verb + Object" structur hota hai.
 
-   مثال:
+   Misal:
    ```bash
    <root@vm1>#whoami
    ```
-   ## "پہلے تیرہ" کمانڈز
+   ## "Pehle Teerh" Commands
 
-| کمانڈ | یہ کیا کرتی ہے | اس کی اہمیت |
-|----------|---------------|----------------|
-| `whoami` | آپ کا یوزر نیم دکھاتا ہے۔ | تصدیق کرتا ہے کہ سسٹم سے کون بات کر رہا ہے۔ |
-| `pwd` | **Print** Working Directory۔ | بتاتا ہے کہ آپ فولڈر سسٹم میں کہاں ہیں۔ |
-| `ls` | فائلیں **List** کرتا ہے۔ | دکھاتا ہے کہ آپ کے موجودہ فولڈر میں کیا ہے۔ |
-| `date` | موجودہ وقت/تاریخ دکھاتا ہے۔ | سادہ ثبوت ہے کہ **Interpreter** کام کر رہا ہے۔ |
-| `clear` | سکرین صاف کرتا ہے۔ | "کمانڈ لائن اینکائیٹی" کم کرنے کے لیے ضروری۔ |
-| `ip a` | نیٹ ورک انٹرفیس اور IP ایڈریس دکھاتا ہے۔ | نیٹ ورک پر اپنے مشین کی شناخت کرنے میں مدد کرتا ہے۔ |
-| `hostnamectl` | سسٹم کا hostname اور آپریٹنگ سسٹم کی تفصیلات دکھاتا ہے۔ | مشین اور سسٹم کی معلومات کی شناخت میں مدد کرتا ہے۔ |
-| `hostnamectl set-hostname <your-hostname>` | سسٹم کا hostname تبدیل کرتا ہے۔ | سرورز کے نام دینے اور نیٹ ورک یا لیب میں سسٹمز کو منظم کرنے کے لیے مفید ہے۔ |
-| `uptime` | دکھاتا ہے کہ سسٹم کتنا وقت سے چل رہا ہے۔ | سسٹم کی استحکام اور بوجھ کی نگرانی میں مدد کرتا ہے۔ |
-| `reboot` | آپریٹنگ سسٹم کو دوبارہ شروع کرتا ہے۔ | تبدیلیاں لاگو کرنے یا بحالی کے لیے عام انتظامی کمانڈ ہے۔ |
-| `passwd` | صارف کا پاس ورڈ تبدیل کرتا ہے۔ | اکاؤنٹ کی حفاظت اور صارف کے انتظام کے لیے ضروری ہے۔ |
-| `/bin/bash` | نیا Bash shell لانچ کرتا ہے (عام طور پر non-login shell)۔ | shell میں داخل ہونے یا故障 کی ازالے کے لیے مفید ہے۔ |
-| `exit` | موجودہ shell سیشن بند کرتا ہے۔ | محفوظ طریقے سے لاگ آؤٹ ہوتا ہے یا ٹرمینل سیشن سے نکلتا ہے۔ |
-    
-# ٹاسک 3 - گٹ ہب اکاؤنٹ رجسٹر کریں
-### GIT کا مطلب ہے "Global Information Tracker"
-اس لنک پر کلک کریں https://github.com/
-## گٹ ہب اکاؤنٹ سیٹ اپ کے مراحل
+   | Command | Yeh Kya Karta Hai | Is Ki Ahmiyat |
+   |----------|---------------|----------------|
+   | `whoami` | Aap ka username dikhata hai. | Tasdiq karta hai ke system se kon baat kar raha hai. |
+   | `pwd` | **Print** Working Directory. | Batata hai ke aap folder system mein kahan hain. |
+   | `ls` | Files **List** karta hai. | Dikhata hai ke aap ke maujuda folder mein kya hai. |
+   | `date` | Maujuda waqt/tareekh dikhata hai. | Sadah buhot hai ke **Interpreter** kaam kar raha hai. |
+   | `clear` | screen saaf karta hai. | "Command line inequality" kam karne ke liye zaroori. |
+   | `ip a` | Network interface aur IP address dikhata hai. | Network par apne machine ki pehchan karne mein madad karta hai. |
+   | `hostnamectl` | System ka hostname aur operating system ki tafseelat dikhata hai. | Machine aur system ki information ki pehchan mein madad karta hai. |
+   | `hostnamectl set-hostname <your-hostname>` | System ka hostname tabdeel karta hai. | servers ko naam dene aur network ya lab mein systems ko munqasam karne ke liye mofeed hai. |
+   | `uptime` | Dikhata hai ke system kitne waqt se chal raha hai. | System ki istqamat aur bojha ki monitoring mein madad karta hai. |
+   | `reboot` | Operating system ko dobara shuru karta hai. | Tabdiliyan lagoo karne ya bahali ke liye aam idari command hai. |
+   | `passwd` | User ka password tabdeel karta hai. | Account ki hifazat aur user ke idari ke liye zaroori hai. |
+   | `/bin/bash` | Naya Bash shell launch karta hai (aam taur par non-login shell). | Shell mein dakhil hone ya fault ke azala ke liye mofeed hai. |
+   | `exit` | Maujuda shell session band karta hai. | Mehfooz taur se log out hota hai ya terminal session se nikalta hai. |
+     
+# Task 3 - GitHub Account Register Karein
+### GIT ka matlab hai "Global Information Tracker"
+Is link par click karein https://github.com/
+## GitHub Account Setup Ke Marhale
 
-| مرحلہ | عمل | تفصیل |
+| Marhala | Amal | Tafseelat |
 |------|---------|-------------|
-| 1 | گٹ ہب ویب سائٹ کھولیں | https://github.com پر جائیں |
-| 2 | سائن اپ پر کلک کریں | ہوم پیج پر **Sign up** بٹن دبائیں |
-| 3 | معلومات داخل کریں | اپنا ای میل، یوزر نیم، اور پاس ورڈ شامل کریں |
-| 4 | ای میل کی تصدیق کریں | اپنا ای میل کھولیں اور تصدیق لنک پر کلک کریں |
-| 5 | پروفائل مکمل کریں | ضرورت ہو تو پروفائل کی تفصیلات شامل کریں |
-| 6 | لاگ ان کریں | اپنے نئے گٹ ہب اکاؤنٹ میں سائن ان کریں |
-| 7 | ریپوزٹری بنائیں | **+** پر کلک کریں → **New repository** |
-| 8 | ریپوزٹری کا نام شامل کریں | پروجیکٹ/ریپوزٹری کا نام داخل کریں |
-| 9 | README شامل کریں | **Add README file** چیک کریں |
-| 10 | ریپوزٹری بنائیں | **Create repository** پر کلک کریں |
+| 1 | GitHub website kholein | https://github.com par jayein |
+| 2 | Sign up par click karein | Home page par **Sign up** button dabayein |
+| 3 | malumat andarkarein | Apna email, username, aur password shamil karein |
+| 4 | Email ki tasdiq karein | Apna email kholein aur tasdiq link par click karein |
+| 5 | Profile mukammal karein | Zaroorat ho to profile ki tafseelat shamil karein |
+| 6 | Login karein | Apnay naye GitHub account mein sign in karein |
+| 7 | Repository banayein | **+** par click karein → **New repository** |
+| 8 | Repository ka naam shamil karein | Project/repository ka naam andarkarein |
+| 9 | README shamil karein | **Add README file** check karein |
+| 10 | Repository banayein | **Create repository** par click karein |
 
-# ٹاسک 4 - لینکڈ ان رجسٹر کریں یا اپڈیٹ کریں
-اس لنک پر کلک کریں https://www.linkedin.com/\
-لینکڈ ان پر اپنا اکاؤنٹ بنائیں
+# Task 4 - LinkedIn Register Karein Ya Update Karein
+Is link par click karein https://www.linkedin.com/\
+LinkedIn par apna account banayein
 
-# ٹاسک 5 - گٹ بیش
-اس لنک پر کلک کریں https://git-scm.com/install/windows
-## گٹ بیش سیٹ اپ کے مراحل
+# Task 5 - Git Bash
+Is link par click karein https://git-scm.com/install/windows
+## Git Bash Setup Ke Marhale
 
-| مرحلہ | عمل | تفصیل |
+| Marhala | Amal | Tafseelat |
 |------|---------|-------------|
-| 1 | گٹ بیش ڈاؤن لوڈ کریں | https://git-scm.com/download/win پر جائیں |
-| 2 | انسٹالر چلائیں | ڈاؤن لوڈ کردہ `.exe` فائل کھولیں |
-| 3 | انسٹالیشن شروع کریں | سیٹ اپ میں **Next** پر کلک کریں |
-| 4 | PATH آپشن کا انتخاب کریں | انتخاب کریں: **Git from command line and also from 3rd-party software** |
-| 5 | HTTPS بیک اینڈ | انتخاب کریں: **Use the OpenSSL library** |
-| 6 | لائن اینڈنگ کا آپشن | انتخاب کریں: **Checkout Windows-style, commit Unix-style line endings** |
-| 7 | گٹ انسٹال کریں | **Install** پر کلک کریں |
-| 8 | سیٹ اپ مکمل کریں | **Finish** پر کلک کریں |
-| 9 | گٹ بیش کھولیں | اسٹارٹ مینیو سے گٹ بیش کو لانچ کریں |
-| 10 | انسٹالیشن کی تصدیق کریں | `git --version` چلائیں |
-| 11 | یوزر نیم کنفیگر کریں | `git config --global user.name "Your Name"` چلائیں |
-| 12 | ای میل کنفیگر کریں | `git config --global user.email "you@example.com"` چلائیں |
-| 13 | کنفیگریشن کی تصدیق کریں | `git config --list` چلائیں |
-| 14 | SSH کی جنریٹ کریں | `ssh-keygen -t ed25519 -C "you@example.com"` چلائیں |
-| 15 | SSH کی گٹ ہب میں شامل کریں | پبلک کی کو GitHub SSH سیٹنگز میں کاپی کریں |
-| 16 | کنکشن ٹیسٹ کریں | `ssh -T git@github.com` چلائیں |
+| 1 | Git Bash download karein | https://git-scm.com/download/win par jayein |
+| 2 | Installer chalaein | Download kiya hua `.exe` file kholein |
+| 3 | Installation shuru karein | Setup mein **Next** par click karein |
+| 4 | PATH option ka intikhab karein | Intikhab karein: **Git from command line and also from 3rd-party software** |
+| 5 | HTTPS backend | Intikhab karein: **Use the OpenSSL library** |
+| 6 | Line ending option | Intikhab karein: **Checkout Windows-style, commit Unix-style line endings** |
+| 7 | Git install karein | **Install** par click karein |
+| 8 | Setup mukammal karein | **Finish** par click karein |
+| 9 | Git Bash kholein | Start menu se Git Bash ko launch karein |
+| 10 | Installation ki tasdiq karein | `git --version` chalaein |
+| 11 | Username configure karein | `git config --global user.name "Your Name"` chalaein |
+| 12 | Email configure karein | `git config --global user.email "you@example.com"` chalaein |
+| 13 | Configuration ki tasdiq karein | `git config --list` chalaein |
+| 14 | SSH key generate karein | `ssh-keygen -t ed25519 -C "you@example.com"` chalaein |
+| 15 | SSH ko GitHub mein shamil karein | Public key ko GitHub SSH settings mein copy karein |
+| 16 | Connection test karein | `ssh -T git@github.com` chalaein |
 
-# ٹاسک 6 - ویژول اسٹوڈیو کوڈ
-اس لنک پر کلک کریں https://code.visualstudio.com/download
+# Task 6 - Visual Studio Code
+Is link par click karein https://code.visualstudio.com/download
 
-# ٹاسک 7 - ڈسکورڈ
-!! انتہائی اہم !!
+# Task 7 - Discord
+!! Intihai Ahmiyat !!
 
-جیسا کہ پہلے بیان کیا گیا، NIT کے تمام لوگوں کے لیے ڈسکورڈ سرور تیار ہے! براہ کرم اس لنک کے ذریعے شامل ہوں: https://discord.gg/UeVHUzz25A
+Jaisay pehle bataya gaya, NIT ke tamam logon ke liye Discord server taiyaar hai! Is link ke zariye shamil hoen: https://discord.gg/UeVHUzz25A
 
-براہ کرم یہ بھی نوٹ کریں کہ ہم باقاعدگی سے WhatsApp کے ساتھ ساتھ مواصلت کے ایک اضافی طریقے کے طور پر ڈسکورڈ کا بھی استعال کریں گے۔
+Yeh bhi note karein ke hum regular taur se WhatsApp ke saath saath communication ke ek aur tariqe ke taur par Discord ka bhi istimal karenge.
 
-# حتمی خلاصہ
-آج آپ نے سیکھا:
+# Hatmi Khulasi
+Aaj aap ne sikhaya:
 
-- ورچوئل مشین تک رسائی حاصل کرنا
-- لینکس شیل کی بنیادی باتیں
-- بنیادی لینکس کمانڈز
-- گٹ ہب اکاؤنٹس بنانا
-- گٹ بیش انسٹال کرنا
-- VS Code انسٹال کرنا
-- ڈسکورڈ سیٹ اپ کرنا
+- Virtual machine tak rasai hasil karna
+- Linux shell ki buniyadi baatein
+- Bunyadi Linux commands
+- GitHub accounts banana
+- Git Bash install karna
+- VS Code install karna
+- Discord setup karna
 
-NIT اکیڈمی میں اپنے لینکس سفر میں خوش آمدید!
+NIT Academy mein apne Linux safar mein khush amdeed!
