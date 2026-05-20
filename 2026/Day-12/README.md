@@ -98,7 +98,7 @@ Agar aap complete kar chuke hain to Congratulations!
 
 ---
 
-### Task 3: Lesson 3 - Files Create aur Delete Karna
+### Task 3: Lesson 3 - Directories kay saat kaam karain
 
 <img src="../../.github/assets/intro12_killercoda.jpeg" width="250">
 
