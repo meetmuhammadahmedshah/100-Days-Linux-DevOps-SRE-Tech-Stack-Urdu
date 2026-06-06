@@ -20,7 +20,7 @@ Isay sajagti se lein aur tamam assignments waqt par mukammal karein.
 # Task 1 - Apne Virtual Machine Tak Rasai Hasil Karein?
 1. Xen-Orchestra Tak Rasai
 Neeche diye gaye link par click karein taake login page tak rasai hasil karein\
-[Xen-Orchestra](https://labs.nit.academy)
+[Xen-Orchestra](https://xen.nit.academy)
 
 <img src="../../.github/assets/XO-LOGIN.jpg" width="500">\
 Apne credentials andarkarein:
