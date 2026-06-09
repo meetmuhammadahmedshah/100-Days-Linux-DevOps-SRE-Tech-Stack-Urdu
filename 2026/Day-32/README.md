@@ -13,13 +13,13 @@ Is Practice Lab ke end tak students:
 1. Linux Kernel aur Operating System Version check kar sakenge.
 2. Verify kar sakenge ke `systemd` PID 1 par run kar raha hai.
 3. Apni current Linux Shell identify kar sakenge.
-4. Apni shell ka Process ID (PID) dekh sakenge.
+4. Apni Shell ka PID check kar sakenge.
 5. `/etc` configuration directory ko explore kar sakenge.
 6. `/etc/shells` file ko Absolute aur Relative Path se read kar sakenge.
-7. `ping` command ka purpose samajh sakenge.
+7. `ping` command aur network connectivity ko samajh sakenge.
 8. Basic troubleshooting commands ki importance samajh sakenge.
-9. Global Initialization Files identify kar sakenge.
-10. Configuration files ka backup lena seekh sakenge.
+9. Global Bash Initialization Files identify kar sakenge.
+10. Critical configuration files ka backup lena seekh sakenge.
 
 ---
 
@@ -27,562 +27,433 @@ Is Practice Lab ke end tak students:
 
 | Task | Title |
 |------|--------|
-| 1 | [Kernel aur Operating System Version Check Karna](#task-1---kernel-aur-operating-system-version-check-karna) |
-| 2 | [systemd ko PID 1 ke Tor Par Verify Karna](#task-2---systemd-ko-pid-1-ke-tor-par-verify-karna) |
-| 3 | [Current Linux Shell Identify Karna](#task-3---current-linux-shell-identify-karna) |
-| 4 | [Apni Shell ka PID Check Karna](#task-4---apni-shell-ka-pid-check-karna) |
-| 5 | [/etc Configuration Directory Explore Karna](#task-5---etc-configuration-directory-explore-karna) |
-| 6 | [/etc/shells File Read Karna](#task-6---etcshells-file-read-karna) |
-| 7 | [Ping Command Practice](#task-7---ping-command-practice) |
-| 8 | [Basic Troubleshooting Commands](#task-8---basic-troubleshooting-commands) |
-| 9 | [Global Initialization Files Check Karna](#task-9---global-initialization-files-check-karna) |
-| 10 | [Configuration File ka Backup Lena](#task-10---configuration-file-ka-backup-lena) |
-| 11 | [Final Review Questions](#final-review-questions) |
-| 12 | [Lab Summary](#lab-summary) |
-
----
-
-# Introduction
-
-Linux Login Process aur Shell Environment ko samajhne ke liye kuch important concepts hain:
-
-- systemd
-- PID aur PPID
-- Bash Shell
-- Login Shell
-- Non-Login Shell
-- Initialization Files
-- Global Configuration Files
-- User Configuration Files
-
-Ek Linux System Administrator ko in tamam concepts ki practical understanding honi chahiye.
+| 1 | Kernel aur Operating System Version Check Karna |
+| 2 | systemd ko PID 1 ke Tor Par Verify Karna |
+| 3 | Current Linux Shell Identify Karna |
+| 4 | Apni Shell ka PID Check Karna |
+| 5 | /etc Configuration Directory Explore Karna |
+| 6 | /etc/shells File Read Karna |
+| 7 | Ping Command Practice |
+| 8 | Basic Troubleshooting Commands |
+| 9 | Global Initialization Files Check Karna |
+| 10 | Configuration File ka Backup Lena |
+| 11 | Final Review Questions |
+| 12 | Lab Summary |
 
 ---
 
 # Task 1 - Kernel aur Operating System Version Check Karna
 
-## Question
+## Sawaal
 
-Aap ka Kernel Version aur Operating System Version kya hai?
+Aap ka Linux Kernel Version aur Operating System Version kya hai?
 
----
+### Run
 
-## Run:
-
-```bash
+~~~bash
 uname -a
-```
-
-```bash
 uname -r
-```
-
-```bash
 cat /etc/os-release
-```
+~~~
 
----
+### Student Observation
 
-## Notes
+Neeche likhein:
 
-| Command | Purpose |
-|----------|----------|
-| `uname -a` | Kernel aur system ki detailed information |
-| `uname -r` | Sirf kernel version |
-| `cat /etc/os-release` | Operating System version aur release information |
-
----
-
-## Student Observation
-
-Likhein:
-
-```text
+~~~text
 Kernel Version:
 Operating System:
-```
+~~~
+
+### Notes
+
+- `uname -a` poori kernel aur system information dikhata hai.
+- `uname -r` sirf kernel version dikhata hai.
+- `cat /etc/os-release` Operating System ki detail dikhata hai.
 
 ---
 
 # Task 2 - systemd ko PID 1 ke Tor Par Verify Karna
 
-## Question
+## Sawaal
 
-Aap kaise verify karenge ke systemd run kar raha hai?
+Aap kaise verify karenge ke `systemd` run kar raha hai?
 
----
+### Run
 
-## Run:
-
-```bash
+~~~bash
 ps 1
-```
-
-```bash
 ps -e
-```
+~~~
 
----
+### Notes
 
-## Notes
+- Linux boot hone ke baad sab se pehla process `systemd` hota hai.
+- systemd aam tor par PID 1 rakhta hai.
+- systemd tamam child processes ka parent hota hai.
 
-Linux boot hone ke baad sab se pehla process:
-
-```text
-systemd
-```
-
-hota hai aur iska PID:
-
-```text
-1
-```
-
-hota hai.
-
-systemd tamam child processes ka parent hota hai.
-
----
-
-## Student Observation
+### Student Observation
 
 Jawab dein:
 
-1. PID 1 ka process kaunsa hai?
-2. systemd kyun important hai?
+1. PID 1 par kaunsa process hai?
+2. PID 1 kyun important hai?
 3. `ps -e` kya show karta hai?
 
 ---
 
 # Task 3 - Current Linux Shell Identify Karna
 
-## Question
+## Sawaal
 
-Aap kaunsi Linux Shell use kar rahe hain?
+Aap kaise maloom karenge ke aap kaunsi Linux Shell use kar rahe hain?
 
----
+### Run
 
-## Run:
-
-```bash
+~~~bash
 echo $SHELL
-```
+~~~
 
----
+### Example Output
 
-## Example Output
-
-```text
+~~~text
 /bin/bash
-```
+~~~
 
----
+### Student Observation
 
-## Notes
+Neeche likhein:
+
+~~~text
+Current Shell:
+~~~
+
+### Notes
+
+Common Linux Shells:
+
+- Bash
+- Sh
+- Zsh
+- Ksh
 
 Shell user aur Linux operating system ke darmiyan interface provide karti hai.
-
-Common Shells:
-
-- bash
-- sh
-- zsh
-- ksh
 
 ---
 
 # Task 4 - Apni Shell ka PID Check Karna
 
-## Question
+## Sawaal
 
-Apni Shell ka Process ID kaise check karenge?
+`echo $SHELL` ke ilawa aap apni shell ka Process ID kaise check karenge?
 
----
+### Run
 
-## Run:
-
-```bash
+~~~bash
 ps $$
-```
-
-```bash
 echo $$
-```
-
-```bash
 echo $0
-```
+~~~
 
----
+### Student Observation
 
-## Notes
+Neeche likhein:
+
+~~~text
+Shell PID:
+Shell Name:
+~~~
+
+### Notes
 
 | Command | Purpose |
 |----------|----------|
 | `ps $$` | Current shell process show karta hai |
-| `echo $$` | Current shell ka PID display karta hai |
-| `echo $0` | Shell ka naam display karta hai |
-
----
-
-## Student Observation
-
-Likhein:
-
-```text
-Shell Name:
-Shell PID:
-```
+| `echo $$` | Current shell ka PID show karta hai |
+| `echo $0` | Shell ka naam show karta hai |
 
 ---
 
 # Task 5 - /etc Configuration Directory Explore Karna
 
-## Question
+## Sawaal
 
 Linux mein configuration files zyada tar kis directory mein hoti hain?
 
----
+### Run
 
-## Run:
-
-```bash
+~~~bash
 ls -l /etc
-```
-
-```bash
 cd /etc
-```
-
-```bash
 ls
-```
+~~~
 
----
+### Student Observation
 
-## Notes
+Jawab dein:
 
-`/etc` Linux ki sab se important configuration directory hai.
+1. Aap ko kis qisam ki files nazar aati hain?
+2. `/etc` directory kyun important hai?
 
-Examples:
+### Notes
 
-```text
+Important files:
+
+~~~text
 /etc/profile
 /etc/bashrc
 /etc/passwd
 /etc/group
 /etc/shadow
 /etc/shells
-```
+~~~
 
 ---
 
 # Task 6 - /etc/shells File Read Karna
 
-## Question
+## Sawaal
 
-Read-only mode mein `/etc/shells` file kaise dekhenge?
+Aap `/etc/shells` file ko read-only mode mein kaise dekh sakte hain?
 
----
+### Method 1 - Absolute Path
 
-## Method 1 – Absolute Path
+#### Run
 
-Run:
-
-```bash
+~~~bash
 cat /etc/shells
-```
+~~~
 
 ---
 
-## Method 2 – Relative Path
+### Method 2 - Relative Path
 
-Run:
+#### Run
 
-```bash
+~~~bash
 cd /etc
-```
-
-```bash
 pwd
-```
-
-```bash
 cat shells
-```
+~~~
 
----
+### Student Observation
 
-## Notes
+Jawab dein:
 
-### Absolute Path
+1. Aap ke system par kitni shells available hain?
+2. Absolute Path aur Relative Path mein kya farq hai?
 
-```text
+### Notes
+
+Absolute Path Example:
+
+~~~text
 /etc/shells
-```
+~~~
 
-Root (`/`) se start hota hai.
+Relative Path Example:
 
-### Relative Path
-
-```text
+~~~text
 shells
-```
-
-Current directory ke mutabiq access hota hai.
+~~~
 
 ---
 
 # Task 7 - Ping Command Practice
 
-## Question
+## Sawaal
 
 Ping command hume kya sikhati hai?
 
----
+### Run
 
-## Run:
-
-```bash
+~~~bash
 ping google.com
-```
-
-```bash
 ping -c 5 google.com
-```
-
-```bash
 ping 8.8.8.8
-```
+~~~
 
----
-
-## Important Note
+### Important Note
 
 Running process ko stop karne ke liye:
 
-```text
+~~~text
 Ctrl + C
-```
+~~~
 
 press karein.
 
-Linux foran aap ko command prompt par wapas le aayega.
+### Student Observation
 
----
+Jawab dein:
 
-## Notes
+1. Kya Google reachable tha?
+2. IP address ko direct ping karne par kya hua?
+3. Linux Administrator ping kyun use karta hai?
+
+### Notes
 
 Ping command test karti hai:
 
-- Network connectivity
-- DNS resolution
-- Internet access
-- Packet response time
-- Remote host reachability
+- Network Connectivity
+- DNS Resolution
+- Internet Access
+- Response Time
+- Remote Host Reachability
 
 ---
 
 # Task 8 - Basic Troubleshooting Commands
 
-## Question
+## Sawaal
 
-Har Linux Administrator ko problem solve karte waqt in commands ko run karna chahiye.
+Jab bhi aap kisi Linux problem ko troubleshoot karein to neeche wali commands run karein aur sochain ke yeh kyun important hain.
 
----
+### Run
 
-## Run:
-
-```bash
+~~~bash
 date
-```
-
-```bash
 uptime
-```
-
-```bash
 hostname
-```
-
-```bash
 whoami
-```
-
-```bash
 pwd
-```
-
-```bash
 cd ~
-```
+~~~
 
----
+### Student Observation
 
-## Notes
+Table complete karein:
 
-| Command | Importance |
-|----------|------------|
-| `date` | System date/time check karta hai |
-| `uptime` | System kitni der se chal raha hai |
-| `hostname` | Machine ka naam |
-| `whoami` | Logged-in user |
-| `pwd` | Current directory |
-| `cd ~` | Home directory mein le jata hai |
+| Command | Yeh Kyun Important Hai? |
+|----------|-------------------------|
+| date | |
+| uptime | |
+| hostname | |
+| whoami | |
+| pwd | |
+| cd ~ | |
 
 ---
 
 # Task 9 - Global Initialization Files Check Karna
 
-## Question
+## Sawaal
 
 Do major Global Initialization Files kaunsi hain?
 
----
+### Run
 
-## Run:
-
-```bash
+~~~bash
 cat /etc/profile
-```
-
-```bash
 cat /etc/bashrc
-```
+~~~
 
----
+### Student Observation
 
-## Notes
+Jawab dein:
+
+1. Kaunsi file Login Shell ko affect karti hai?
+2. Kaunsi file Non-Login Shell ko affect karti hai?
+3. Yeh files kyun important hain?
+
+### Notes
 
 | File | Purpose |
 |--------|----------|
 | `/etc/profile` | Global Login Shell Initialization File |
-| `/etc/bashrc` | Global Interactive Non-Login Shell Initialization File |
+| `/etc/bashrc` | Global Interactive Shell Initialization File |
 
-Yeh files system ke tamam users ko affect karti hain.
+Yeh files tamam users ko affect karti hain.
 
 ---
 
 # Task 10 - Configuration File ka Backup Lena
 
-## Question
+## Sawaal
 
-Critical configuration files modify karne se pehle kya karna chahiye?
+Critical configuration file ko modify ya delete karne se pehle kya karna chahiye?
 
----
-
-## Answer
+### Jawab
 
 Hamesha backup lena chahiye.
 
----
+### Run
 
-## Backup Create Karein
-
-Run:
-
-```bash
+~~~bash
 cp -r /etc/profile /etc/profile_bak
-```
-
----
-
-## Verify Karein
-
-Run:
-
-```bash
 cd /etc
-```
-
-```bash
 ls
-```
+~~~
 
-Aap ko nazar aana chahiye:
+### Verify
 
-```text
+Aap ko yeh files nazar aani chahiye:
+
+~~~text
 profile
 profile_bak
-```
+~~~
 
----
-
-## Important Warning
+### Important Warning
 
 Kabhi bhi:
 
-```text
+~~~text
 /etc/profile
-```
+~~~
 
 delete mat karein.
 
-Yeh ek critical configuration file hai.
+Yeh ek critical system file hai.
 
----
+### Backup File Delete Karna
 
-## Backup File Delete Karein
-
-Run:
-
-```bash
+~~~bash
 rm /etc/profile_bak
-```
+~~~
 
----
+### Notes
 
-## Important Note
-
-`profile_bak` ek file hai.
-
-Is liye:
-
-```bash
-rm
-```
-
-use hoga.
-
-`rmdir`
-
-sirf empty directories ke liye use hota hai.
+- `rm` files delete karta hai.
+- `rmdir` empty directories delete karta hai.
+- `profile_bak` ek file hai, is liye `rm` use hoga.
 
 ---
 
 # Final Review Questions
 
 1. Kernel Version dekhne ki command kya hai?
-2. Operating System Version kaise check karte hain?
+2. Operating System information dekhne ki command kya hai?
 3. PID 1 kya hota hai?
 4. systemd kyun important hai?
-5. Current Shell kaise identify karte hain?
-6. Shell ka PID kaise check karte hain?
+5. Current Shell dekhne ki command kya hai?
+6. Shell PID dekhne ki command kya hai?
 7. `/etc` directory ka purpose kya hai?
-8. Absolute aur Relative Path mein kya difference hai?
+8. Absolute Path aur Relative Path mein kya farq hai?
 9. Ping command kya test karti hai?
 10. Running process ko kaise stop karte hain?
 11. Do major Global Initialization Files kaunsi hain?
-12. Backup lena kyun zaroori hai?
+12. Configuration file ka backup lena kyun zaroori hai?
 13. `rm` aur `rmdir` mein kya difference hai?
 
 ---
 
 # Lab Summary
 
-Is lab mein aap ne seekha:
+Is lab mein aap ne practice ki:
 
-- Kernel aur OS Version check karna
-- systemd ko PID 1 ke tor par verify karna
+- Kernel Version check karna
+- Operating System information dekhna
+- systemd ko PID 1 verify karna
 - Apni current Shell identify karna
-- Shell ka PID check karna
-- `/etc` configuration directory explore karna
+- Shell PID check karna
+- `/etc` directory explore karna
 - `/etc/shells` file read karna
 - Absolute aur Relative Paths samajhna
 - Ping command use karna
 - Ctrl + C se process stop karna
 - Basic troubleshooting commands chalana
-- Global Initialization Files identify karna
+- Global Initialization Files dekhna
 - Critical configuration files ka backup lena
 
 ---
@@ -591,22 +462,24 @@ Is lab mein aap ne seekha:
 
 Har Linux System Administrator ko hamesha yaad rakhna chahiye:
 
-```bash
+~~~bash
 date
 uptime
 hostname
 whoami
 pwd
-```
+~~~
 
-Yeh commands troubleshooting ka bunyadi hissa hain.
+Yeh commands troubleshooting ki bunyaad hain.
 
-Aur:
+## Golden Rule
 
-```text
-Backup First, Change Later!
-```
+~~~text
+PEHLAY BACKUP LO, PHIR CHANGE KARO
+~~~
 
 ---
+
 # End of Lab
+
 🐧 Happy Learning Linux!
