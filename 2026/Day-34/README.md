@@ -1,24 +1,24 @@
 # PRACTICE LAB
-# Day 34 – Creating, Managing and Deleting Aliases in Linux
+# Day 34 – Linux Mein Aliases Create, Manage aur Delete Karna
 ## June 10th, 2026
 
-> Based on Linux Administration Concepts and Alias Management
+> Linux Administration aur Alias Management 
 
 ---
 
 # Objective
 
-The objective of this lab is to learn how to:
+Is lab ka maqsad yeh seekhna hai ke:
 
-1. Understand what an Alias is.
-2. View existing aliases.
-3. Create temporary aliases.
-4. Use aliases to simplify commands.
-5. Delete temporary aliases.
-6. Create permanent aliases.
-7. Verify permanent aliases.
-8. Remove permanent aliases.
-9. Understand how aliases improve Linux Administration.
+1. Alias kya hota hai.
+2. Existing aliases kaise dekhe jate hain.
+3. Temporary aliases kaise create ki jati hain.
+4. Aliases ko commands ki shortcut ke tor par kaise use kiya jata hai.
+5. Temporary aliases kaise remove ki jati hain.
+6. Permanent aliases kaise create ki jati hain.
+7. Permanent aliases ko verify kaise kiya jata hai.
+8. Permanent aliases ko remove kaise kiya jata hai.
+9. Linux Administration mein aliases productivity kaise improve karti hain.
 
 ---
 
@@ -26,54 +26,55 @@ The objective of this lab is to learn how to:
 
 | Task | Title |
 |------|--------|
-| 1 | What is an Alias? |
-| 2 | View Existing Aliases |
-| 3 | Create a Temporary Alias |
-| 4 | Use a Temporary Alias |
-| 5 | Delete a Temporary Alias |
-| 6 | Create a Permanent Alias |
-| 7 | Verify a Permanent Alias |
-| 8 | Remove a Permanent Alias |
-| 9 | Review Questions |
-| 10 | Lab Summary |
+| 1 | Alias Kya Hota Hai? |
+| 2 | Existing Aliases Dekhna |
+| 3 | Temporary Alias Create Karna |
+| 4 | Temporary Alias Use Karna |
+| 5 | Temporary Alias Delete Karna |
+| 6 | Permanent Alias Create Karna |
+| 7 | Permanent Alias Verify Karna |
+| 8 | Permanent Alias Remove Karna |
+| 9 | Apne Khud Ke Admin Aliases Banana |
+| 10 | Review Questions |
+| 11 | Lab Summary |
 
 ---
 
 # Introduction
 
-## What is an Alias?
+## Alias Kya Hota Hai?
 
-An Alias is another name for a command.
+Alias kisi command ka doosra naam hota hai.
 
-Aliases allow Linux Administrators to:
+Aliases Linux Administrators ko allow karti hain:
 
-- Create shortcut commands
-- Simplify long commands
-- Increase productivity
-- Reduce typing mistakes
-- Improve efficiency
+- Shortcut commands banane ke liye
+- Lambi commands ko simplify karne ke liye
+- Productivity improve karne ke liye
+- Typing mistakes kam karne ke liye
+- Time bachane ke liye
 
-For example:
+Misal ke tor par:
 
-Instead of typing:
+Agar aap baar baar yeh command run karte hain:
 
 ~~~bash
 ls -l /root
 ~~~
 
-you can create an alias:
+To aap iska alias bana sakte hain:
 
 ~~~bash
 alias lh='ls -l /root'
 ~~~
 
-Now simply typing:
+Ab sirf:
 
 ~~~bash
 lh
 ~~~
 
-will run:
+type karne se Linux yeh command run karega:
 
 ~~~bash
 ls -l /root
@@ -94,16 +95,16 @@ alias alias_name='actual_command'
 | Component | Description |
 |------------|-------------|
 | alias | Alias command |
-| alias_name | New shortcut name |
-| actual_command | Real command executed |
+| alias_name | Shortcut naam |
+| actual_command | Asal command jo execute hogi |
 
 ---
 
-# Task 1 - View Existing Aliases
+# Task 1 - Existing Aliases Dekhna
 
 ## Objective
 
-Display all aliases currently configured.
+System mein pehle se mojood aliases dekhna.
 
 ### Run
 
@@ -113,13 +114,13 @@ alias
 
 ### Questions
 
-1. How many aliases are displayed?
-2. Which aliases already exist?
-3. Why might Linux create default aliases?
+1. Kitni aliases display hui?
+2. Kaunsi aliases pehle se mojood hain?
+3. Linux default aliases kyun provide karta hai?
 
 ### Notes
 
-Linux distributions often include aliases such as:
+Aksar Linux distributions mein yeh aliases hoti hain:
 
 ~~~bash
 alias ll='ls -l'
@@ -129,11 +130,11 @@ alias l='ls -CF'
 
 ---
 
-# Task 2 - Create a Temporary Alias
+# Task 2 - Temporary Alias Create Karna
 
 ## Objective
 
-Create an alias that works only in the current session.
+Current session ke liye alias create karna.
 
 ### Run
 
@@ -149,16 +150,16 @@ alias
 
 ### Questions
 
-1. Do you see the alias `lh`?
-2. What command does `lh` execute?
+1. Kya aap ko alias `lh` nazar aa raha hai?
+2. Yeh alias kaunsi command execute karta hai?
 
 ---
 
-# Task 3 - Use a Temporary Alias
+# Task 3 - Temporary Alias Use Karna
 
 ## Objective
 
-Use the newly created alias.
+Naye alias ko use karna.
 
 ### Run
 
@@ -168,26 +169,26 @@ lh
 
 ### Expected Result
 
-The contents of:
+Directory:
 
 ~~~text
 /root
 ~~~
 
-should be displayed.
+ki listing display hogi.
 
 ### Questions
 
-1. Did the alias work?
-2. Was it easier than typing the full command?
+1. Kya alias successfully kaam kar raha hai?
+2. Kya yeh poori command likhne se asaan tha?
 
 ---
 
-# Task 4 - Create Additional Temporary Aliases
+# Task 4 - Multiple Temporary Aliases Create Karna
 
 ## Objective
 
-Practice creating multiple aliases.
+Mukhtalif aliases create karne ki practice karna.
 
 ### Run
 
@@ -204,7 +205,7 @@ alias myup='uptime'
 alias
 ~~~
 
-### Test Each Alias
+### Test Karein
 
 ~~~bash
 mydate
@@ -215,16 +216,16 @@ myup
 
 ### Questions
 
-1. Which alias was most useful?
-2. Which command would you personally create an alias for?
+1. Sab se useful alias kaunsi thi?
+2. Aap apni daily work ke liye kaunsi alias create karenge?
 
 ---
 
-# Task 5 - Delete a Temporary Alias
+# Task 5 - Temporary Alias Delete Karna
 
 ## Objective
 
-Remove an alias from the current session.
+Current session se alias remove karna.
 
 ### Run
 
@@ -252,40 +253,39 @@ bash: lh: command not found
 
 ### Questions
 
-1. What command removes an alias?
-2. What happened when you tried to run `lh` again?
+1. Alias delete karne ke liye kaunsi command use hoti hai?
+2. Alias delete hone ke baad kya hua?
 
 ---
 
-# Understanding Temporary Aliases
+# Temporary Aliases Ko Samajhna
 
 ## Important Note
 
 Temporary aliases:
 
-- Exist only in the current session.
-- Are removed automatically when you:
-  - Log out
-  - Close the terminal
-  - Restart the system
+- Sirf current session tak rehti hain.
+- Logout ke baad khatam ho jati hain.
+- Terminal close karne par remove ho jati hain.
+- System reboot ke baad remove ho jati hain.
 
 ---
 
-# Task 6 - Create a Permanent Alias
+# Task 6 - Permanent Alias Create Karna
 
 ## Objective
 
-Create an alias that remains available after logout and reboot.
+Aisi alias create karna jo logout aur reboot ke baad bhi available rahe.
 
-### Step 1 - Open .bashrc
+### Step 1 - .bashrc File Open Karein
 
-Run
+### Run
 
 ~~~bash
 vi ~/.bashrc
 ~~~
 
-OR
+YA
 
 ~~~bash
 nano ~/.bashrc
@@ -293,21 +293,21 @@ nano ~/.bashrc
 
 ---
 
-### Step 2 - Add the Following Alias
+### Step 2 - Alias Add Karein
 
-Add this line at the bottom of the file:
+File ke end mein yeh line add karein:
 
 ~~~bash
 alias llroot='ls -l /root'
 ~~~
 
-Save and exit.
+Save karke exit karein.
 
 ---
 
-### Step 3 - Reload .bashrc
+### Step 3 - .bashrc Reload Karein
 
-Run
+### Run
 
 ~~~bash
 source ~/.bashrc
@@ -317,8 +317,6 @@ source ~/.bashrc
 
 ### Verify
 
-Run
-
 ~~~bash
 alias
 ~~~
@@ -331,16 +329,16 @@ llroot
 
 ### Questions
 
-1. Why did we modify `.bashrc`?
-2. Why did we run `source ~/.bashrc`?
+1. Hum ne `.bashrc` file kyun modify ki?
+2. `source ~/.bashrc` kyun run kiya?
 
 ---
 
-# Task 7 - Verify Permanent Alias
+# Task 7 - Permanent Alias Verify Karna
 
 ## Objective
 
-Verify that the alias survives future sessions.
+Verify karna ke alias next session mein bhi available hai.
 
 ### Run
 
@@ -348,7 +346,7 @@ Verify that the alias survives future sessions.
 exit
 ~~~
 
-Log back into the system.
+Dobarah login karein.
 
 ### Verify
 
@@ -364,26 +362,26 @@ llroot
 
 ### Questions
 
-1. Did the alias remain available?
-2. Why is it called a permanent alias?
+1. Kya alias ab bhi available hai?
+2. Isay permanent alias kyun kehte hain?
 
 ---
 
-# Task 8 - Remove a Permanent Alias
+# Task 8 - Permanent Alias Remove Karna
 
 ## Objective
 
-Delete a permanent alias.
+Permanent alias delete karna.
 
-### Step 1 - Open .bashrc
+### Step 1 - .bashrc Open Karein
 
-Run
+### Run
 
 ~~~bash
 vi ~/.bashrc
 ~~~
 
-OR
+YA
 
 ~~~bash
 nano ~/.bashrc
@@ -391,19 +389,19 @@ nano ~/.bashrc
 
 ---
 
-### Step 2 - Locate
+### Step 2 - Alias Dhoondein
 
 ~~~bash
 alias llroot='ls -l /root'
 ~~~
 
-Delete the line.
+Is line ko delete kar dein.
 
 ---
 
-### Step 3 - Reload Configuration
+### Step 3 - Configuration Reload Karein
 
-Run
+### Run
 
 ~~~bash
 source ~/.bashrc
@@ -431,16 +429,16 @@ command not found
 
 ### Questions
 
-1. Why did the alias disappear?
-2. What file stores permanent aliases?
+1. Alias kyun disappear ho gayi?
+2. Permanent aliases kis file mein store hoti hain?
 
 ---
 
-# Task 9 - Create Your Own Administrator Aliases
+# Task 9 - Apni Khud Ki Administrator Aliases Banana
 
 ## Objective
 
-Create useful aliases that a Linux Administrator might use daily.
+Aisi aliases create karna jo Linux Administrator daily use kar sakta hai.
 
 ### Examples
 
@@ -452,7 +450,7 @@ alias mymem='free -h'
 alias myproc='ps -ef'
 ~~~
 
-### Test
+### Test Karein
 
 ~~~bash
 mylogs
@@ -464,64 +462,70 @@ myproc
 
 ### Discussion
 
-Which aliases would make your daily work easier?
+Kaunsi aliases aap ki daily work ko asaan bana sakti hain?
 
 ---
 
 # Review Questions
 
-1. What is an Alias?
-2. Why are aliases useful?
-3. What command displays all aliases?
-4. What command creates an alias?
-5. What command removes an alias?
-6. What is the difference between a temporary alias and a permanent alias?
-7. Which file is commonly used to store permanent aliases?
-8. What does `source ~/.bashrc` do?
-9. Why should Linux Administrators use aliases?
-10. Give three examples of aliases you would use daily.
+1. Alias kya hota hai?
+2. Aliases kyun useful hoti hain?
+3. Tamam aliases dekhne ki command kya hai?
+4. Alias create karne ki command kya hai?
+5. Alias delete karne ki command kya hai?
+6. Temporary aur Permanent Alias mein kya difference hai?
+7. Permanent aliases kis file mein store hoti hain?
+8. `source ~/.bashrc` kya karta hai?
+9. Linux Administrators aliases kyun use karte hain?
+10. Aisi teen aliases likhein jo aap rozana use karenge.
 
 ---
 
 # Lab Summary
 
-In this lab you learned how to:
+Is lab mein aap ne seekha:
 
-- View existing aliases
-- Create temporary aliases
-- Use aliases
-- Delete temporary aliases
-- Create permanent aliases
-- Store aliases in `.bashrc`
-- Reload shell configuration
-- Remove permanent aliases
-- Improve efficiency using shortcut commands
+- Existing aliases dekhna
+- Temporary aliases create karna
+- Aliases use karna
+- Temporary aliases delete karna
+- Permanent aliases create karna
+- `.bashrc` file mein aliases save karna
+- Bash configuration reload karna
+- Permanent aliases remove karna
+- Productivity improve karna
 
 ---
 
 # Important Lesson
 
-Aliases are one of the easiest ways to become more productive as a Linux Administrator.
+Aliases Linux Administrator ki productivity bohat improve karti hain.
 
-Instead of typing long commands repeatedly:
+Misal ke tor par:
 
 ~~~bash
 ls -l /var/log
 ~~~
 
-you can simply create:
+baar baar type karne ke bajaye:
 
 ~~~bash
 alias logs='ls -l /var/log'
 ~~~
 
-and use:
+banayein aur sirf:
 
 ~~~bash
 logs
 ~~~
 
-This saves time and reduces typing errors.
+run karein.
+
+Yeh:
+
+- Time bachata hai
+- Typing errors kam karta hai
+- Commands yaad rakhna asaan banata hai
 
 ---
 
